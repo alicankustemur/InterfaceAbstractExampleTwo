@@ -10,21 +10,23 @@ public abstract class AnimalImpl implements IAnimal {
 	 
 
 	protected AnimalImpl(final String name, final double height,
-			   final double weight, final String color, final String eyeColor) {
-			  setName(name);
-			  setHeight(height);
-			  setWeight(weight);
-			  setColor(eyeColor);
-			  setEyeColor(eyeColor);
-			 }
+			   final double weight, final String color, final String eyeColor){
+			   
+		setName(name);
+		setHeight(height);
+		setWeight(weight);
+		setColor(eyeColor);
+		setEyeColor(eyeColor);
+	}
 	
 	 protected AnimalImpl() {
-		  setName("Ýsimsiz bir hayvan");
-		  setHeight(-1);
-		  setWeight(-1);
-		  setColor("Siyah");
-		  setEyeColor("Siyah");
-		 }
+		 
+		 setName("Ýsimsiz bir hayvan");
+		 setHeight(-1);
+		 setWeight(-1);
+		 setColor("Siyah");
+		 setEyeColor("Siyah");
+	 }
 	
 	@Override
 	public abstract String talk();
